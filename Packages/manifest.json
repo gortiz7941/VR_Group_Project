@@ -1,5 +1,15 @@
 {
+    "scopedRegistries": [  
+        {  
+            "name": "npmjs",  
+            "url": "https://registry.npmjs.org/",  
+            "scopes": [  
+                "io.extendreality"  
+            ]  
+        }  
+    ],
   "dependencies": {
+    "io.extendreality.vrtk.prefabs": "1.1.3",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "3.4.9",
@@ -13,6 +23,7 @@
     "com.unity.xr.interaction.toolkit": "0.10.0-preview.7",
     "com.unity.xr.management": "3.2.16",
     "com.unity.xr.oculus": "1.5.0",
+    "com.unity.xr.oculus.standalone": "2.38.4",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
