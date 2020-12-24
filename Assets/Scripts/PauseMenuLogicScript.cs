@@ -36,12 +36,12 @@ public class PauseMenuLogicScript : MonoBehaviour
 
         foreach (GameObject item in pauseItems)
         {
-            item.setActive(inPauseMenu);
+            item.SetActive(inPauseMenu);
         }
 
         foreach (GameObject item in pauseItems)
         {
-            item.setActive(!inPauseMenu);
+            item.SetActive(!inPauseMenu);
         }
 
     }
