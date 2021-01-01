@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/GameSelectionScene.unity
+    guid: 4c07185edaa556b4ba804f9dfbffeda2
+  - enabled: 1
+    path: Assets/Scenes/PlumbingScene.unity
+    guid: cf4de22999616984d9021b469e95726d
+  - enabled: 1
+    path: Assets/Scenes/ElectricalScene.unity
+    guid: a8dacba8e9b7b664285aba4ec32572e7
+  - enabled: 1
+    path: Assets/Scenes/CarpentryScene.unity
+    guid: bd0729a1f3fe257468fb5472bd229f21
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 187651bd414a815438cb8e1ee93d2aba,
       type: 2}
