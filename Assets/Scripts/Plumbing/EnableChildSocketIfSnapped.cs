@@ -25,8 +25,10 @@ public class EnableChildSocketIfSnapped : MonoBehaviour {
             childSocket = socket.selectTarget.GetComponentInChildren<XRSocketInteractor>();
             childSocket.socketActive = true;
         } else {
-            childSocket.socketActive = false;
-            childSocket = null;
-        }
+            if (childSocket != null) {
+                childSocket.socketActive = false;
+                childSocket = null;
+            }
+        } 
     }
 }

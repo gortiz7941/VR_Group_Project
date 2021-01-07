@@ -8,7 +8,7 @@ public class GameSession : MonoBehaviour
     private const float SESSION_TIME = 10f;
     private const string GAME_SELECTION_SCENE = "GameSelectionScene";
 
-    public Light light;
+    public new Light light;
     public GameObject winCanvas;
     public GameObject loseCanvas;
     public GameObject pauseCanvas;
