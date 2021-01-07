@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class EnableSnapIfSnapped : MonoBehaviour {
-
+public class DisableParentColliderIfSnapped : MonoBehaviour
+{
     XRSocketInteractor socket;
-    XRSocketInteractor childSocket;
 
     // Start is called before the first frame update
     void Start()
@@ -17,16 +16,14 @@ public class EnableSnapIfSnapped : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        EnableSnap();
+        DisableGrab();
     }
 
-    private void EnableSnap() {
-        if (socket.selectTarget != null) {
-            childSocket = socket.selectTarget.GetComponentInChildren<XRSocketInteractor>();
-            childSocket.socketActive = true;
+    private void DisableGrab() {
+        if (socket.selectTarget == null) {
+            socket.GetComponentInParent<MeshCollider>().enabled = true;
         } else {
-            childSocket.socketActive = false;
-            childSocket = null;
+            socket.GetComponentInParent<MeshCollider>().enabled = false;
         }
     }
 }

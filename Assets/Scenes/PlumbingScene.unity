@@ -255,7 +255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37195125}
   m_Layer: 0
-  m_Name: GrabPoint (1)
+  m_Name: GrabPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3301,11 +3301,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4901545319175661868, guid: 72fcf15e5c0d62b45b8eefa0b18169be,
-        type: 3}
-      propertyPath: m_TagString
-      value: Pipe Grab Point
-      objectReference: {fileID: 0}
     - target: {fileID: 4901545320800382285, guid: 72fcf15e5c0d62b45b8eefa0b18169be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3890,7 +3885,7 @@ GameObject:
   - component: {fileID: 423487115}
   - component: {fileID: 423487114}
   m_Layer: 8
-  m_Name: SnapPoint (3)
+  m_Name: SnapPointTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5756,7 +5751,7 @@ GameObject:
   - component: {fileID: 645394790}
   - component: {fileID: 645394789}
   m_Layer: 8
-  m_Name: SnapPoint (4)
+  m_Name: SnapPointTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6066,7 +6061,7 @@ GameObject:
   - component: {fileID: 691456427}
   - component: {fileID: 691456426}
   m_Layer: 8
-  m_Name: SnapPoint (4)
+  m_Name: SnapPointBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9173,6 +9168,7 @@ GameObject:
   - component: {fileID: 940479219}
   - component: {fileID: 940479221}
   - component: {fileID: 940479220}
+  - component: {fileID: 940479222}
   m_Layer: 0
   m_Name: SnapPoint
   m_TagString: Untagged
@@ -9243,6 +9239,18 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &940479222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940479218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24b70aa187671a47bbe66e501c472bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &944240429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13418,7 +13426,7 @@ GameObject:
   - component: {fileID: 1303902708}
   - component: {fileID: 1303902707}
   m_Layer: 8
-  m_Name: SnapPoint (5)
+  m_Name: SnapPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13436,7 +13444,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1943979061}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1303902707
 MonoBehaviour:
@@ -14981,7 +14989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1472126806}
   m_Layer: 0
-  m_Name: GrabPoint (2)
+  m_Name: GrabPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14995,7 +15003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472126805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.43, y: 0, z: -2.89}
+  m_LocalPosition: {x: -0, y: -0.57, z: -5.81}
   m_LocalScale: {x: 9.879499, y: 9.879499, z: 9.879499}
   m_Children: []
   m_Father: {fileID: 1943979061}
@@ -15958,7 +15966,7 @@ GameObject:
   - component: {fileID: 1600030943}
   - component: {fileID: 1600030942}
   m_Layer: 8
-  m_Name: SnapPoint (6)
+  m_Name: SnapPointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15976,7 +15984,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1943979061}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1600030942
 MonoBehaviour:
@@ -16395,7 +16403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643162988}
   m_Layer: 0
-  m_Name: GrabPoint (4)
+  m_Name: GrabPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
