@@ -8,6 +8,9 @@ TagManager:
   - Appliance
   - WaterSource
   - Pipe Grab Point
+  - ConnectedPipe
+  - T
+  - Elbow
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - 
   - 
   - Pipes
-  - 
-  - 
-  - 
+  - Source
+  - Snap
+  - Connected Pipe
   - 
   - 
   - 
