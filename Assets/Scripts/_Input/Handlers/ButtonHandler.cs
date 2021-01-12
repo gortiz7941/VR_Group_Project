@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR;
 
 [CreateAssetMenu(fileName = "NewButtonHandler")]
 public class ButtonHandler : InputHandler
