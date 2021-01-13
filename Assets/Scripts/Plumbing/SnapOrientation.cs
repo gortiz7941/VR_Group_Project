@@ -15,7 +15,6 @@ public class SnapOrientation : MonoBehaviour {
         //print("Target selected..." + socket.selectTarget.name);
 
         if (socket.selectTarget.tag == "Elbow") {
-            print("Target is an Elbow!");
             socket.attachTransform.localPosition = elbowPosition;
             socket.attachTransform.localRotation = Quaternion.Slerp(socket.attachTransform.localRotation, Quaternion.Euler(elbowRotation), 100f * Time.deltaTime);
         }

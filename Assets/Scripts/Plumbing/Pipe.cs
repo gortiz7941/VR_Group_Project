@@ -16,15 +16,15 @@ public class Pipe : MonoBehaviour
 
     // Start is called before the first frame update
     protected virtual void Start() {
-        socket = gameObject.GetComponent<XRSocketInteractor>();
+        socket = gameObject.GetComponentInChildren<XRSocketInteractor>();
     }
 
     // Update is called once per frame
     protected virtual void Update() {
-        MarkChildAsConnected();
+        UpdateConnectedPipes();
         EnableSnap();
         DisableGrab();
-        UpdateConnectedPipes();
+        MarkChildAsConnected();
     }
 
     private void UpdateConnectedPipes() {
@@ -44,7 +44,6 @@ public class Pipe : MonoBehaviour
         if (socket.selectTarget) {
 
             // If this pipe has another pipe connected to it, activate the connected pipe's socket if it exists.
-            connectedPipe = socket.selectTarget.gameObject;
             if (connectedPipeSocket = socket.selectTarget.GetComponentInChildren<XRSocketInteractor>()) {
                 connectedPipeSocket.socketActive = true;
             }

@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4716402321021265422}
   - component: {fileID: 4716402321021265416}
   - component: {fileID: 4716402321021265417}
+  - component: {fileID: 1813366384087267388}
   m_Layer: 8
   m_Name: Elbow
   m_TagString: Elbow
@@ -188,6 +189,18 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!114 &1813366384087267388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4716402321021265420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a268d22fca8a4d4ea9aaa70bfc7bded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8110430044613550116
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +213,6 @@ GameObject:
   - component: {fileID: 2456881972327011525}
   - component: {fileID: 1842227176465621893}
   - component: {fileID: 2772725570467361217}
-  - component: {fileID: 7475836009239792778}
   m_Layer: 8
   m_Name: SnapPoint
   m_TagString: Elbow
@@ -323,18 +335,6 @@ MonoBehaviour:
   elbowRotation: {x: 270, y: 0, z: 0}
   pipePosition: {x: 0, y: 0, z: 0}
   pipeRotation: {x: 0, y: 0, z: 0}
---- !u!114 &7475836009239792778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110430044613550116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a268d22fca8a4d4ea9aaa70bfc7bded, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4716402320718441373
 PrefabInstance:
   m_ObjectHideFlags: 0

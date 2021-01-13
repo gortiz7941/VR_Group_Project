@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 4901545320798707661}
   - component: {fileID: 4901545319249605729}
   - component: {fileID: 4901545319249605734}
+  - component: {fileID: 4877661500389106910}
   m_Layer: 8
   m_Name: Snappable Pipe
   m_TagString: Pipe
@@ -283,6 +284,18 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!114 &4877661500389106910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4901545320800809325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16eb4938d66d8b45b1d0111aad64ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6487329565411680824
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +308,6 @@ GameObject:
   - component: {fileID: 6428615965603016789}
   - component: {fileID: 6352971481436311678}
   - component: {fileID: 1941992326}
-  - component: {fileID: 2826797972269747555}
   m_Layer: 8
   m_Name: SnapPoint
   m_TagString: Pipe
@@ -418,15 +430,3 @@ MonoBehaviour:
   elbowRotation: {x: 270, y: 0, z: 0}
   pipePosition: {x: 0, y: 0, z: 0}
   pipeRotation: {x: 0, y: 0, z: 0}
---- !u!114 &2826797972269747555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487329565411680824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b16eb4938d66d8b45b1d0111aad64ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

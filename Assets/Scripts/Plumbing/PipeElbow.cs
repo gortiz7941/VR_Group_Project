@@ -31,14 +31,14 @@ public class PipeElbow : Pipe {
 
         if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool buttonValue) && isHit && hit.transform.tag == "Elbow") {
             if (pipeConnectedTo != null) {
-                print(hit.transform.name);
-                print(hit.transform.GetComponentInChildren<PipeElbow>().name);
-                print(hit.transform.GetComponentInChildren<PipeElbow>().pipeConnectedTo.name);
-                XRSocketInteractor rotateSocket = hit.transform.GetComponentInChildren<PipeElbow>().pipeConnectedTo.GetComponent<XRSocketInteractor>();
+                print(hit.transform.GetComponent<PipeElbow>().pipeConnectedTo.GetComponentInChildren<XRSocketInteractor>());
+                XRSocketInteractor rotateSocket = hit.transform.GetComponent<PipeElbow>().pipeConnectedTo.GetComponentInChildren<XRSocketInteractor>();
                 if (previousPress != buttonValue) {
                     previousPress = buttonValue;
 
                     if (buttonValue == true) {
+                        print(rotateSocket.name);
+                        print(rotateSocket.attachTransform.name);
                         RotateElbow(rotateSocket.attachTransform);
                     }
                 }
