@@ -427,6 +427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elbowPosition: {x: 0, y: 0, z: 0}
-  elbowRotation: {x: 270, y: 0, z: 0}
+  elbowRotation: {x: 0, y: 0, z: 0}
   pipePosition: {x: 0, y: 0, z: 0}
   pipeRotation: {x: 0, y: 0, z: 0}

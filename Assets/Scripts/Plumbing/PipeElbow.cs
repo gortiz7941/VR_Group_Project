@@ -20,36 +20,26 @@ public class PipeElbow : Pipe {
 
     protected override void Update() {
         base.Update();
-        AllowRotation();
+        RotateOnPrimaryButtonPress();
     }
 
     //*******************************************************
-    // Rotates a pipe if the player presses a primary button.
+    // Rotates a pipe 90 degrees if the player presses a primary button.
     // ******************************************************
-    private void AllowRotation() {
+    private void RotateOnPrimaryButtonPress() {
         isHit = ray.GetCurrentRaycastHit(out hit);
 
-        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool buttonValue) && isHit && hit.transform.tag == "Elbow") {
+        if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool buttonValue) && isHit && hit.transform.gameObject == gameObject) {
             if (pipeConnectedTo != null) {
-                print(hit.transform.GetComponent<PipeElbow>().pipeConnectedTo.GetComponentInChildren<XRSocketInteractor>());
                 XRSocketInteractor rotateSocket = hit.transform.GetComponent<PipeElbow>().pipeConnectedTo.GetComponentInChildren<XRSocketInteractor>();
                 if (previousPress != buttonValue) {
                     previousPress = buttonValue;
 
                     if (buttonValue == true) {
-                        print(rotateSocket.name);
-                        print(rotateSocket.attachTransform.name);
-                        RotateElbow(rotateSocket.attachTransform);
+                        rotateSocket.attachTransform.localRotation *= Quaternion.Euler(new Vector3(0, 0, 90));
                     }
                 }
             }
         }
-    }
-
-    //*******************************************************
-    // Rotates a piece 90 degrees around the X axis.
-    // ******************************************************
-    private void RotateElbow(Transform attachTransform) {
-        attachTransform.localRotation *= Quaternion.Slerp(attachTransform.localRotation, Quaternion.LookRotation(new Vector3(-90, 0, 0)), 1.0f);
     }
 }

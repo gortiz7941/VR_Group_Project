@@ -28,10 +28,14 @@ public class Pipe : MonoBehaviour
     }
 
     private void UpdateConnectedPipes() {
-        if (socket.selectTarget) {
+        if (socket.selectTarget != null) {
             connectedPipe = socket.selectTarget.gameObject;
             connectedPipeSocket = socket.selectTarget.GetComponentInChildren<XRSocketInteractor>();
-            socket.selectTarget.GetComponentInChildren<Pipe>().pipeConnectedTo = gameObject;
+            connectedPipe.GetComponent<Pipe>().pipeConnectedTo = gameObject;
+        } else if (connectedPipe != null) {
+            connectedPipe.GetComponent<Pipe>().pipeConnectedTo = null;
+            connectedPipe = null;
+            connectedPipeSocket = null;
         }
     }
 
