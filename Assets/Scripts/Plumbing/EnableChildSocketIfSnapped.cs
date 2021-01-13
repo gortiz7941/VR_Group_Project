@@ -5,33 +5,35 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR;
 
 public class EnableChildSocketIfSnapped : MonoBehaviour {
+    /*
     private XRController controller;
     private XRRayInteractor ray;
     private RaycastHit hit;
     private bool isHit = false;
     private bool previousPress = false;
 
-    private XRSocketInteractor socket;
-    private XRSocketInteractor childSocket;
 
     private bool isConnectedToSource = false;
+    */
 
+    private XRSocketInteractor socket;
+    private XRSocketInteractor childSocket;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        controller = GameObject.Find("RightHand Controller").GetComponent<XRController>();
-        ray = controller.GetComponent<XRRayInteractor>();
+        //controller = GameObject.Find("RightHand Controller").GetComponent<XRController>();
+        //ray = controller.GetComponent<XRRayInteractor>();
         socket = gameObject.GetComponent<XRSocketInteractor>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        MarkChildAsConnected();
         EnableSnap();
-        AllowElbowRotation();
+        //MarkChildAsConnected();
+        //AllowElbowRotation();
     }
 
     private void EnableSnap() {
@@ -48,6 +50,7 @@ public class EnableChildSocketIfSnapped : MonoBehaviour {
         }
     }
 
+    /*
     private void AllowElbowRotation() {        
         isHit = ray.GetCurrentRaycastHit(out hit);
 
@@ -68,4 +71,5 @@ public class EnableChildSocketIfSnapped : MonoBehaviour {
             isConnectedToSource = true;
         }
     }
+    */
 }

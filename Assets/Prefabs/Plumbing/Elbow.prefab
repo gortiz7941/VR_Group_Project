@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267735157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0.8}
+  m_LocalPosition: {x: 0, y: -4, z: 0.5}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 4716402321021265423}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 2456881972327011525}
   - component: {fileID: 1842227176465621893}
   - component: {fileID: 2772725570467361217}
-  - component: {fileID: 8330506171170031472}
+  - component: {fileID: 7475836009239792778}
   m_Layer: 8
   m_Name: SnapPoint
   m_TagString: Elbow
@@ -216,7 +216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8110430044613550116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.4, z: 4.5}
+  m_LocalPosition: {x: -0.03, y: -5.32, z: 5.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4716402321021265423}
@@ -305,7 +305,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2772725570467361217
 MonoBehaviour:
@@ -323,7 +323,7 @@ MonoBehaviour:
   elbowRotation: {x: 270, y: 0, z: 0}
   pipePosition: {x: 0, y: 0, z: 0}
   pipeRotation: {x: 0, y: 0, z: 0}
---- !u!114 &8330506171170031472
+--- !u!114 &7475836009239792778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8110430044613550116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ce354138fdee44aa5448b4bc54bf7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a268d22fca8a4d4ea9aaa70bfc7bded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4716402320718441373

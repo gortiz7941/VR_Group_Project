@@ -3,7 +3,14 @@ using System.Collections;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR;
 
+enum Pipes {
+    Straight,
+    Elbow,
+    T
+}
+
 public class PipeSocket : XRSocketInteractor {
+    /*
     private XRController controller;
     private XRRayInteractor ray;
     private RaycastHit hit;
@@ -72,4 +79,5 @@ public class PipeSocket : XRSocketInteractor {
             isConnectedToSource = true;
         }
     }
+    */
 }
