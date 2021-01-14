@@ -29,25 +29,9 @@ public class Pipe : MonoBehaviour {
         }
     }
 
-
-    private void OnCollisionEnter(Collision collision) {
-        print("Collision detected...");
-        if (collision.collider.GetComponent<Appliance>() != null) {
-            print("You win by collision?");
-            if (isConnectedToSource) {
-                print("Yep, you win by collision!");
-            }
-        }
-    }
-
     public void OnTriggerEnter(Collider other) {
-        print("Trigger entered...");
-        if (other.GetComponent<Appliance>() != null) {
-            print("You win by trigger?");
-            if (isConnectedToSource) {
-                print("Yep, you win by trigger!");
-            }
+        if (other.GetComponent<Appliance>() != null && isConnectedToSource) {
+            GameObject.Find("GameSession").GetComponent<GameSession>().WinGame();
         }
-
     }
 }

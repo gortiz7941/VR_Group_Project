@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
-    private const float SESSION_TIME = 10f;
+    public float sessionTime = 10f;
     private const string GAME_SELECTION_SCENE = "GameSelectionScene";
 
     public new Light light;
@@ -18,7 +18,7 @@ public class GameSession : MonoBehaviour
 
     void Start()
     {
-        currentTime = SESSION_TIME;
+        currentTime = sessionTime;
         loseCanvas.SetActive(false);
         winCanvas.SetActive(false);
     }
@@ -33,12 +33,12 @@ public class GameSession : MonoBehaviour
 
         if (currentTime < 0)
         {
-            handleSessionEnd(false);
+            HandleSessionEnd(false);
         }
 
     }
 
-    private void handleSessionEnd(bool success)
+    private void HandleSessionEnd(bool success)
     {
         loseCanvas.SetActive(false);
         winCanvas.SetActive(false);
@@ -52,7 +52,7 @@ public class GameSession : MonoBehaviour
     {
         const float upperbound = 2.3f;
         const float lowerbound = 0.3f;
-        float intensityValue = lowerbound + ((upperbound - lowerbound) * (currentTime / SESSION_TIME));
+        float intensityValue = lowerbound + ((upperbound - lowerbound) * (currentTime / sessionTime));
         light.intensity = Mathf.Max(lowerbound, intensityValue);
     }
 
@@ -68,7 +68,7 @@ public class GameSession : MonoBehaviour
 
     public void WinGame()
     {
-        handleSessionEnd(true);
+        HandleSessionEnd(true);
     }
 
     public void ExitGame()
