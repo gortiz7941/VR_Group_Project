@@ -1,19 +1,10 @@
-﻿using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-
-public class PipeSocket : XRSocketInteractor {
+﻿public class SourceSocket : PipeSocket
+{
+    protected override void Start() { }
     
-    public Pipe ThisPipe { get; protected set; }
-    public Pipe ConnectedPipe { get; protected set; }
-
-    protected override void Start() {
-        ThisPipe = GetComponentInParent<Pipe>();
-    }
-
-    protected virtual void Update() {
+    protected override void Update() {
         // If there is a pipe in this socket....
         if (selectTarget != null && ConnectedPipe == null) {
-            ThisPipe.DisableGrab();
 
             // Mark this socket as containing that pipe and vice versa.
             ConnectedPipe = selectTarget.GetComponentInParent<Pipe>();
@@ -26,7 +17,6 @@ public class PipeSocket : XRSocketInteractor {
 
             // If there is not a pipe in this socket...
         } else if (selectTarget == null && ConnectedPipe != null) {
-            ThisPipe.EnableGrab();
 
             // Turn off the sockets of the connected pipe.
             foreach (PipeSocket socket in ConnectedPipe.GetComponentsInChildren<PipeSocket>()) {
@@ -39,4 +29,3 @@ public class PipeSocket : XRSocketInteractor {
         }
     }
 }
-

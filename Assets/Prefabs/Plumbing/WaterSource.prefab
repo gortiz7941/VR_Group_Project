@@ -57,12 +57,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112222152500992797}
-  - component: {fileID: 2508424297530787542}
+  - component: {fileID: 7908209861793967574}
   - component: {fileID: 2112222152500992794}
-  - component: {fileID: 1435180427}
+  - component: {fileID: 1879578961}
   m_Layer: 9
   m_Name: SnapPoint
-  m_TagString: Untagged
+  m_TagString: WaterSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ Transform:
   m_Father: {fileID: 2112222151997429007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2508424297530787542
+--- !u!114 &7908209861793967574
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,13 +90,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2112222152500992796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b5995635983d9a499fc709b503c8c17, type: 3}
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   m_AttachTransform: {fileID: 0}
   m_StartingSelectedInteractable: {fileID: 0}
   m_OnHoverEntered:
@@ -131,19 +131,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1435180427}
-        m_MethodName: SetOrientation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2508424297530787542}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor,
-            Unity.XR.Interaction.Toolkit
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -164,9 +152,9 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1435180427
+--- !u!114 &1879578961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,13 +163,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2112222152500992796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceaa306c9baebc644bb36751d46916e9, type: 3}
+  m_Script: {fileID: 11500000, guid: b24b70aa187671a47bbe66e501c472bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elbowPosition: {x: 0, y: 0, z: 0}
-  elbowRotation: {x: 270, y: 0, z: 0}
-  pipePosition: {x: 0, y: 0, z: 0}
-  pipeRotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &2112222151579775061
 PrefabInstance:
   m_ObjectHideFlags: 0

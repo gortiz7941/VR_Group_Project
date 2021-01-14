@@ -40,7 +40,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 267735157}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.6518671
   m_Height: 2.0499623
   m_Direction: 1
@@ -114,7 +114,7 @@ MonoBehaviour:
   - {fileID: 4716402320716432285}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 768
   m_OnFirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -187,6 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a268d22fca8a4d4ea9aaa70bfc7bded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  socketConnectedTo: {fileID: 0}
 --- !u!1 &8110430044613550116
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +199,6 @@ GameObject:
   - component: {fileID: 4187114188824345455}
   - component: {fileID: 2456881972327011525}
   - component: {fileID: 1842227176465621893}
-  - component: {fileID: 2772725570467361217}
   m_Layer: 8
   m_Name: SnapPoint
   m_TagString: Elbow
@@ -270,19 +270,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2772725570467361217}
-        m_MethodName: SetOrientation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2456881972327011525}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor,
-            Unity.XR.Interaction.Toolkit
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -305,22 +293,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2772725570467361217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8110430044613550116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceaa306c9baebc644bb36751d46916e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elbowPosition: {x: 0, y: 0, z: 0}
-  elbowRotation: {x: 0, y: 0, z: 0}
-  pipePosition: {x: 0, y: 0, z: 0}
-  pipeRotation: {x: 0, y: 0, z: 0}
 --- !u!1001 &4716402320718441373
 PrefabInstance:
   m_ObjectHideFlags: 0

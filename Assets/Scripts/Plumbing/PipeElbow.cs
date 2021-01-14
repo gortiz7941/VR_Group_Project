@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -11,8 +9,7 @@ public class PipeElbow : Pipe {
     bool isHit = false;
     bool previousPress = false;
     
-    protected override void Start()
-    {
+    protected override void Start() {
         base.Start();
         controller = GameObject.Find("RightHand Controller").GetComponent<XRController>();
         ray = controller.GetComponent<XRRayInteractor>();
@@ -30,8 +27,8 @@ public class PipeElbow : Pipe {
         isHit = ray.GetCurrentRaycastHit(out hit);
 
         if (controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool buttonValue) && isHit && hit.transform.gameObject == gameObject) {
-            if (pipeConnectedTo != null) {
-                XRSocketInteractor rotateSocket = hit.transform.GetComponent<PipeElbow>().pipeConnectedTo.GetComponentInChildren<XRSocketInteractor>();
+            if (socketConnectedTo != null && GetComponentInChildren<PipeSocket>().selectTarget == null) {
+                XRSocketInteractor rotateSocket = hit.transform.GetComponent<PipeElbow>().socketConnectedTo;
                 if (previousPress != buttonValue) {
                     previousPress = buttonValue;
 

@@ -1,92 +1,53 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.XR;
-using UnityEngine.XR.Interaction.Toolkit;
+﻿using UnityEngine;
 
-public class Pipe : MonoBehaviour
-{
+public class Pipe : MonoBehaviour {
+    public PipeSocket socketConnectedTo;
+    public bool isConnectedToSource = false;
 
-    protected XRSocketInteractor socket;
-    protected XRSocketInteractor connectedPipeSocket;
-
-    protected GameObject connectedPipe;
-    protected GameObject pipeConnectedTo;
-    //private bool isConnectedToSource = false;
-
-    // Start is called before the first frame update
-    protected virtual void Start() {
-        socket = gameObject.GetComponentInChildren<XRSocketInteractor>();
-    }
-
-    // Update is called once per frame
+    protected virtual void Start() { }
     protected virtual void Update() {
-        UpdateConnectedPipes();
-        EnableSnap();
-        DisableGrab();
-        MarkChildAsConnected();
-    }
-
-    private void UpdateConnectedPipes() {
-        if (socket.selectTarget != null) {
-            connectedPipe = socket.selectTarget.gameObject;
-            connectedPipeSocket = socket.selectTarget.GetComponentInChildren<XRSocketInteractor>();
-            connectedPipe.GetComponent<Pipe>().pipeConnectedTo = gameObject;
-        } else if (connectedPipe != null) {
-            connectedPipe.GetComponent<Pipe>().pipeConnectedTo = null;
-            connectedPipe = null;
-            connectedPipeSocket = null;
-        }
-    }
-
-    //********************************************
-    // Enables the snap point on a connected pipe.
-    //********************************************
-    private void EnableSnap() {
-
-        // Check to ensure this pipe has another pipe connected to it.
-        if (socket.selectTarget) {
-
-            // If this pipe has another pipe connected to it, activate the connected pipe's socket if it exists.
-            if (connectedPipeSocket = socket.selectTarget.GetComponentInChildren<XRSocketInteractor>()) {
-                connectedPipeSocket.socketActive = true;
-            }
-
-        // Check that this pipe does not have another pipe connected.
+        if (socketConnectedTo != null && (socketConnectedTo.tag == "WaterSource" || socketConnectedTo.ThisPipe.isConnectedToSource == true)) {
+            isConnectedToSource = true;
         } else {
+            isConnectedToSource = false;
+        }
+    }
 
-            // if there is a connected pipe socket stored, there was a pipe connected to this pipe,
-            // and it has been disconnected. Disable the socket of the disconnected pipe, then set 
-            // the connected socket to null to signify that the disconnected pipe is disconnected.
-            if (connectedPipeSocket != null) {
-                connectedPipeSocket.socketActive = false;
-                connectedPipeSocket = null;
+    //*************************************************************
+    // Disable grabbing of the pipe. This is done by imposing an
+    // invisible and non-interactable collider over the pipe model.
+    //*************************************************************
+    public void DisableGrab() {
+        if (!transform.Find("PreventGrab").GetComponentInChildren<Collider>().enabled) {
+            transform.Find("PreventGrab").GetComponentInChildren<Collider>().enabled = true;
+        }
+    }
+
+    public virtual void EnableGrab() {
+        if (transform.Find("PreventGrab").GetComponentInChildren<Collider>().enabled) {
+            transform.Find("PreventGrab").GetComponentInChildren<Collider>().enabled = false;
+        }
+    }
+
+
+    private void OnCollisionEnter(Collision collision) {
+        print("Collision detected...");
+        if (collision.collider.GetComponent<Appliance>() != null) {
+            print("You win by collision?");
+            if (isConnectedToSource) {
+                print("Yep, you win by collision!");
             }
         }
     }
 
-    //**************************************************************************
-    // Makes an object ungrabbable if the pipe has another pipe connected to it.
-    //**************************************************************************
-    private void DisableGrab() {
-
-        // If this pipe has another pipe connected to it, disable grabbing this pipe.
-        if (socket.selectTarget && !socket.transform.parent.Find("PreventGrab").GetComponent<Collider>().enabled) {
-            if (!socket.transform.parent.Find("PreventGrab").GetComponentInChildren<Collider>().enabled) {
-                socket.transform.parent.Find("PreventGrab").GetComponentInChildren<Collider>().enabled = true;
-            }
-
-        // If this pipe doesn't have another pipe connected to it, enable grabbing this pipe.
-        } else if (!socket.selectTarget && socket.transform.parent.Find("PreventGrab").GetComponent<Collider>()) {
-            if (socket.transform.parent.Find("PreventGrab").GetComponentInChildren<Collider>().enabled) {
-                socket.transform.parent.Find("PreventGrab").GetComponentInChildren<Collider>().enabled = false;
+    public void OnTriggerEnter(Collider other) {
+        print("Trigger entered...");
+        if (other.GetComponent<Appliance>() != null) {
+            print("You win by trigger?");
+            if (isConnectedToSource) {
+                print("Yep, you win by trigger!");
             }
         }
-    }
 
-    //*********************************************************
-    // Marks a connected pipe as connected to the water source.
-    //*********************************************************
-    private void MarkChildAsConnected() {
     }
 }

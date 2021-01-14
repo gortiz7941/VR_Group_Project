@@ -148,7 +148,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4901545320800382285}
-  - component: {fileID: 4901545320798707661}
   - component: {fileID: 4901545319249605729}
   - component: {fileID: 4901545319249605734}
   - component: {fileID: 4877661500389106910}
@@ -176,20 +175,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &4901545320798707661
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4901545320800809325}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!54 &4901545319249605729
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -296,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16eb4938d66d8b45b1d0111aad64ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  socketConnectedTo: {fileID: 0}
 --- !u!1 &6487329565411680824
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +293,6 @@ GameObject:
   - component: {fileID: 1925920927810885997}
   - component: {fileID: 6428615965603016789}
   - component: {fileID: 6352971481436311678}
-  - component: {fileID: 1941992326}
   m_Layer: 8
   m_Name: SnapPoint
   m_TagString: Pipe
@@ -379,19 +364,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1941992326}
-        m_MethodName: SetOrientation
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 6428615965603016789}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor,
-            Unity.XR.Interaction.Toolkit
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -414,19 +387,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1941992326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487329565411680824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceaa306c9baebc644bb36751d46916e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elbowPosition: {x: 0, y: 0, z: 0}
-  elbowRotation: {x: 0, y: 0, z: 0}
-  pipePosition: {x: 0, y: 0, z: 0}
-  pipeRotation: {x: 0, y: 0, z: 0}
