@@ -6529,6 +6529,11 @@ PrefabInstance:
       propertyPath: SESSION_TIME
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 2516455226771019582, guid: c9a94cd250abd9d41b023f47c7f5eca4,
+        type: 3}
+      propertyPath: sessionTime
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 2516455226771019583, guid: c9a94cd250abd9d41b023f47c7f5eca4,
         type: 3}
       propertyPath: m_LocalPosition.x
