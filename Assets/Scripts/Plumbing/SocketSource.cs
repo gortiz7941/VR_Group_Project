@@ -1,4 +1,4 @@
-﻿public class SourceSocket : PipeSocket
+﻿public class SocketSource : PipeSocket
 {
     protected override void Start() { }
     
