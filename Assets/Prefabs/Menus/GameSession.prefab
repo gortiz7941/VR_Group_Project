@@ -173,13 +173,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261ad8664e4468744b2c4c2a1a75ac47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deviceRole: 3
+  deviceCharacteristics: 256
   button: 4
   OnPress:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2516455226771019582}
-        m_MethodName: TogglePause
+        m_MethodName: PauseButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

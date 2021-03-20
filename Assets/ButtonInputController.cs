@@ -13,7 +13,6 @@ namespace Zenva.VR
         static readonly Dictionary<string, InputFeatureUsage<bool>> availableButtons = new Dictionary<string, InputFeatureUsage<bool>>
         {
             {"triggerButton", CommonUsages.triggerButton },
-            {"thumbrest", CommonUsages.thumbrest },
             {"primary2DAxisClick", CommonUsages.primary2DAxisClick },
             {"primary2DAxisTouch", CommonUsages.primary2DAxisTouch },
             {"menuButton", CommonUsages.menuButton },
@@ -38,8 +37,8 @@ namespace Zenva.VR
             primaryTouch
         };
 
-        [Tooltip("Input device role (left or right controller)")]
-        public InputDeviceRole deviceRole;
+        [Tooltip("Input device characteristics (left or right controller)")]
+        public InputDeviceCharacteristics deviceCharacteristics;
 
         [Tooltip("Select the button")]
         public ButtonOption button;
@@ -73,7 +72,8 @@ namespace Zenva.VR
 
         void Update()
         {
-            InputDevices.GetDevicesWithRole(deviceRole, inputDevices);
+            InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Left, inputDevices);
+
 
             for (int i = 0; i < inputDevices.Count; i++)
             {

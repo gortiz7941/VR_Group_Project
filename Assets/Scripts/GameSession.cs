@@ -66,6 +66,12 @@ public class GameSession : MonoBehaviour
         canvas.SetActive(true);
     }
 
+    private void TogglePause()
+    {
+        isPaused = !isPaused;
+        ShowCanvasToUser(pauseCanvas);
+    }
+
     public void WinGame()
     {
         HandleSessionEnd(true);
@@ -82,10 +88,10 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene(scene.name);
     }
 
-    public void TogglePause()
+    public void PauseButtonPressed()
     {
-        isPaused = !isPaused;
-        ShowCanvasToUser(pauseCanvas);
+        if (!isPaused)
+            TogglePause();
     }
 
 
