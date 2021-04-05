@@ -10,22 +10,16 @@ public class EnableChildSocketIfSnapped : MonoBehaviour {
     private XRSocketInteractor childSocket;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         socket = gameObject.GetComponent<XRSocketInteractor>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
+    
+    void Update() {
         EnableSnap();
-        //MarkChildAsConnected();
-        //AllowElbowRotation();
     }
 
     private void EnableSnap() {
-        if (socket && socket.selectTarget) {
+        if (socket.selectTarget) {
             if (childSocket = socket.selectTarget.GetComponentInChildren<XRSocketInteractor>()) {
                 childSocket.socketActive = true;
                 //childSocket.isConnectedToSource = true;
