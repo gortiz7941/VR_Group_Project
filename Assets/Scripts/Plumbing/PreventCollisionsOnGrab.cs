@@ -49,8 +49,10 @@ public class PreventCollisionsOnGrab : MonoBehaviour
     }
 
     private void PreventCollisions(XRBaseInteractable interactable) {
-        thisCollider = interactable.GetComponentInChildren<MeshCollider>();
-        StartCoroutine(ToggleCollisionsOnOff());
+        if (interactable != null) {
+            thisCollider = interactable.GetComponentInChildren<MeshCollider>();
+            StartCoroutine(ToggleCollisionsOnOff());
+        }
     }
 
     private IEnumerator ToggleCollisionsOnOff() {

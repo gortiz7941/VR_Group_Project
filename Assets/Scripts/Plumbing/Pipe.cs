@@ -22,8 +22,7 @@ public class Pipe : MonoBehaviour {
         } else {
             isConnectedToSource = false;
         }
-
-        Debug.Log("transform.position.y = "+ transform.position.y);
+        
         // Bring pipe back to table if it falls out of bounds.
         if (transform.position.y < -3) {
             transform.position = startPosition;
