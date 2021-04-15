@@ -11,6 +11,10 @@ TagManager:
   - ConnectedPipe
   - T
   - Elbow
+  - Wire
+  - ElectricitySource
+  - Wire90
+  - Gang
   layers:
   - Default
   - TransparentFX
@@ -24,9 +28,9 @@ TagManager:
   - Source
   - Snap
   - Connected Pipe
-  - 
-  - 
-  - 
+  - Wires
+  - ESource
+  - Gangs
   - 
   - 
   - 
