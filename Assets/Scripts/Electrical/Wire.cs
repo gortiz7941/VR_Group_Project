@@ -19,8 +19,8 @@ public class Wire : MonoBehaviour
     }
 
     //*************************************************************
-    // Disable grabbing of the pipe. This is done by imposing an
-    // invisible and non-interactable collider over the pipe model.
+    // Disable grabbing of the wire. This is done by imposing an
+    // invisible and non-interactable collider over the wire model.
     //*************************************************************
     public void DisableGrab()
     {

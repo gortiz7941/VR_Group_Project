@@ -4,32 +4,32 @@
 
     protected override void Update()
     {
-        // If there is a pipe in this socket....
+
         if (selectTarget != null && ConnectedWire == null)
         {
 
-            // Mark this socket as containing that pipe and vice versa.
+            // Mark this socket as containing that wire and vice versa.
             ConnectedWire = selectTarget.GetComponentInParent<Wire>();
             ConnectedWire.socketConnectedTo = this;
 
-            // Turn on the sockets of the connected pipe.
+            // Turn on the sockets of the connected wire.
             foreach (WireSocket socket in ConnectedWire.GetComponentsInChildren<WireSocket>())
             {
                 socket.socketActive = true;
             }
 
-            // If there is not a pipe in this socket...
+            // If there is not a wire in this socket...
         }
         else if (selectTarget == null && ConnectedWire != null)
         {
 
-            // Turn off the sockets of the connected pipe.
+            // Turn off the sockets of the connected wire.
             foreach (WireSocket socket in ConnectedWire.GetComponentsInChildren<WireSocket>())
             {
                 socket.socketActive = false;
             }
 
-            // Unmark that pipe as containing this socket and vice versa.
+            // Unmark that wire as containing this socket and vice versa.
             ConnectedWire.socketConnectedTo = null;
             ConnectedWire = null;
         }

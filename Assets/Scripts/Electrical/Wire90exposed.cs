@@ -23,10 +23,10 @@ public class Wire90exposed : Wire
         //RotateOnPrimaryButtonPress();
     }
 
-    //*******************************************************
-    // Rotates a pipe 90 degrees if the player presses a primary button.
-    // ******************************************************
-   /* private void RotateOnPrimaryButtonPress()
+
+    // Rotates a wire 90 degrees if the player presses a primary button.
+
+   /*private void RotateOnPrimaryButtonPress()
     {
         isHit = ray.GetCurrentRaycastHit(out hit);
 

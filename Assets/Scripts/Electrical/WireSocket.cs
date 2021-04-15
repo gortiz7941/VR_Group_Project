@@ -14,34 +14,35 @@ public class WireSocket : XRSocketInteractor
 
     protected virtual void Update()
     {
-        // If there is a pipe in this socket....
+        // Checks to see if a wire is connected to the selected object.
         if (selectTarget != null && ConnectedWire == null)
         {
+            //Disables grab ability of selected wire.
             ThisWire.DisableGrab();
 
-            // Mark this socket as containing that pipe and vice versa.
+            // Linking selected object's socket to wire being connected.
             ConnectedWire = selectTarget.GetComponentInParent<Wire>();
             ConnectedWire.socketConnectedTo = this;
 
-            // Turn on the sockets of the connected pipe.
+            // Turn on the sockets of the connected wire.
             foreach (WireSocket socket in ConnectedWire.GetComponentsInChildren<WireSocket>())
             {
                 socket.socketActive = true;
             }
 
-            // If there is not a pipe in this socket...
+     
         }
         else if (selectTarget == null && ConnectedWire != null)
         {
             ThisWire.EnableGrab();
 
-            // Turn off the sockets of the connected pipe.
+            // Turn off the sockets of the connected wire.
             foreach (WireSocket socket in ConnectedWire.GetComponentsInChildren<WireSocket>())
             {
                 socket.socketActive = false;
             }
 
-            // Unmark that pipe as containing this socket and vice versa.
+            // Unmark that wire as containing this socket and vice versa.
             ConnectedWire.socketConnectedTo = null;
             ConnectedWire = null;
         }
