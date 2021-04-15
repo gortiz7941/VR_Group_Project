@@ -8,6 +8,7 @@ public class PipeSocket : XRSocketInteractor {
 
     protected override void Start() {
         ThisPipe = GetComponentInParent<Pipe>();
+        ConnectedPipe = null;
     }
 
     protected virtual void Update() {

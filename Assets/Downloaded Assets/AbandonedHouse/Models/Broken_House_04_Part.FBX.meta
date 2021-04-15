@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 6ecca6d82f5ec6f4db979be60c79f518
+timeCreated: 1541167088
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Broken_House_04Floor_a
+    100004: Broken_House_04Floor_column
+    100006: Broken_House_04Floor_F1
+    100008: Broken_House_04Floor_F2
+    100010: Broken_House_04Floor_F3
+    100012: Broken_House_04Floor_F4
+    100014: Broken_House_04Floor_F5
+    100016: Broken_House_04Floor_F6
+    100018: Broken_House_04Floor_F7
+    100020: Broken_House_04Floor_rig
+    100022: Broken_House_04Floor_stair
+    100024: Broken_House_04Floor_W1
+    100026: Broken_House_04Floor_W2
+    100028: Broken_House_04Floor_W3
+    100030: Broken_House_04Floor_W4
+    100032: Broken_House_04Floor_walls
+    400000: //RootNode
+    400002: Broken_House_04Floor_a
+    400004: Broken_House_04Floor_column
+    400006: Broken_House_04Floor_F1
+    400008: Broken_House_04Floor_F2
+    400010: Broken_House_04Floor_F3
+    400012: Broken_House_04Floor_F4
+    400014: Broken_House_04Floor_F5
+    400016: Broken_House_04Floor_F6
+    400018: Broken_House_04Floor_F7
+    400020: Broken_House_04Floor_rig
+    400022: Broken_House_04Floor_stair
+    400024: Broken_House_04Floor_W1
+    400026: Broken_House_04Floor_W2
+    400028: Broken_House_04Floor_W3
+    400030: Broken_House_04Floor_W4
+    400032: Broken_House_04Floor_walls
+    2300000: Broken_House_04Floor_a
+    2300002: Broken_House_04Floor_column
+    2300004: Broken_House_04Floor_F1
+    2300006: Broken_House_04Floor_F2
+    2300008: Broken_House_04Floor_F3
+    2300010: Broken_House_04Floor_F4
+    2300012: Broken_House_04Floor_F5
+    2300014: Broken_House_04Floor_F6
+    2300016: Broken_House_04Floor_F7
+    2300018: Broken_House_04Floor_rig
+    2300020: Broken_House_04Floor_stair
+    2300022: Broken_House_04Floor_W1
+    2300024: Broken_House_04Floor_W2
+    2300026: Broken_House_04Floor_W3
+    2300028: Broken_House_04Floor_W4
+    2300030: Broken_House_04Floor_walls
+    3300000: Broken_House_04Floor_a
+    3300002: Broken_House_04Floor_column
+    3300004: Broken_House_04Floor_F1
+    3300006: Broken_House_04Floor_F2
+    3300008: Broken_House_04Floor_F3
+    3300010: Broken_House_04Floor_F4
+    3300012: Broken_House_04Floor_F5
+    3300014: Broken_House_04Floor_F6
+    3300016: Broken_House_04Floor_F7
+    3300018: Broken_House_04Floor_rig
+    3300020: Broken_House_04Floor_stair
+    3300022: Broken_House_04Floor_W1
+    3300024: Broken_House_04Floor_W2
+    3300026: Broken_House_04Floor_W3
+    3300028: Broken_House_04Floor_W4
+    3300030: Broken_House_04Floor_walls
+    4300000: Broken_House_04Floor_a
+    4300002: Broken_House_04Floor_column
+    4300004: Broken_House_04Floor_rig
+    4300006: Broken_House_04Floor_walls
+    4300008: Broken_House_04Floor_stair
+    4300010: Broken_House_04Floor_F3
+    4300012: Broken_House_04Floor_F1
+    4300014: Broken_House_04Floor_F2
+    4300016: Broken_House_04Floor_F7
+    4300018: Broken_House_04Floor_F6
+    4300020: Broken_House_04Floor_F4
+    4300022: Broken_House_04Floor_F5
+    4300024: Broken_House_04Floor_W3
+    4300026: Broken_House_04Floor_W4
+    4300028: Broken_House_04Floor_W2
+    4300030: Broken_House_04Floor_W1
+    6400000: Broken_House_04Floor_a
+    6400002: Broken_House_04Floor_column
+    6400004: Broken_House_04Floor_F1
+    6400006: Broken_House_04Floor_F2
+    6400008: Broken_House_04Floor_F3
+    6400010: Broken_House_04Floor_F4
+    6400012: Broken_House_04Floor_F5
+    6400014: Broken_House_04Floor_F6
+    6400016: Broken_House_04Floor_F7
+    6400018: Broken_House_04Floor_rig
+    6400020: Broken_House_04Floor_stair
+    6400022: Broken_House_04Floor_W1
+    6400024: Broken_House_04Floor_W2
+    6400026: Broken_House_04Floor_W3
+    6400028: Broken_House_04Floor_W4
+    6400030: Broken_House_04Floor_walls
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
