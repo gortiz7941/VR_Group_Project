@@ -1,6 +1,6 @@
 ﻿public class SocketSource : PipeSocket
 {
-    protected override void Start() { }
+    protected override void Start() { socketActive = true; }
     
     protected override void Update() {
         // If there is a pipe in this socket....
