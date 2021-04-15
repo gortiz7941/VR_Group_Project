@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameSelectionScene.unity
     guid: 4c07185edaa556b4ba804f9dfbffeda2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PlumbingScene.unity
     guid: cf4de22999616984d9021b469e95726d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ElectricalScene.unity
     guid: a8dacba8e9b7b664285aba4ec32572e7
   - enabled: 1
