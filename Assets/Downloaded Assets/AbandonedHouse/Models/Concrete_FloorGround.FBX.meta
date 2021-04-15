@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 6dbacf8e38deadd4e985413de4525795
+timeCreated: 1541167088
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Concrete_FloorGround01a
+    100004: Concrete_FloorGround01b
+    100006: Concrete_FloorGround01c
+    100008: Concrete_FloorGround01d
+    100010: Concrete_FloorGround01e
+    100012: Concrete_FloorGround01f
+    100014: Concrete_FloorGround01g
+    400000: //RootNode
+    400002: Concrete_FloorGround01a
+    400004: Concrete_FloorGround01b
+    400006: Concrete_FloorGround01c
+    400008: Concrete_FloorGround01d
+    400010: Concrete_FloorGround01e
+    400012: Concrete_FloorGround01f
+    400014: Concrete_FloorGround01g
+    2300000: Concrete_FloorGround01a
+    2300002: Concrete_FloorGround01b
+    2300004: Concrete_FloorGround01c
+    2300006: Concrete_FloorGround01d
+    2300008: Concrete_FloorGround01e
+    2300010: Concrete_FloorGround01f
+    2300012: Concrete_FloorGround01g
+    3300000: Concrete_FloorGround01a
+    3300002: Concrete_FloorGround01b
+    3300004: Concrete_FloorGround01c
+    3300006: Concrete_FloorGround01d
+    3300008: Concrete_FloorGround01e
+    3300010: Concrete_FloorGround01f
+    3300012: Concrete_FloorGround01g
+    4300000: Concrete_FloorGround01c
+    4300002: Concrete_FloorGround01e
+    4300004: Concrete_FloorGround01f
+    4300006: Concrete_FloorGround01g
+    4300008: Concrete_FloorGround01b
+    4300010: Concrete_FloorGround01d
+    4300012: Concrete_FloorGround01a
+    6400000: Concrete_FloorGround01a
+    6400002: Concrete_FloorGround01b
+    6400004: Concrete_FloorGround01c
+    6400006: Concrete_FloorGround01d
+    6400008: Concrete_FloorGround01e
+    6400010: Concrete_FloorGround01f
+    6400012: Concrete_FloorGround01g
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
